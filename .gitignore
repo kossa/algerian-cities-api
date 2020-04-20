@@ -1,12 +1,34 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
-.env
-.env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
+### Laravel ###
+/vendor/
+node_modules/
 npm-debug.log
 yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+
+### PHPUnit ###
+# Covers PHPUnit
+# Reference: https://phpunit.de/
+
+# Generated files
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
+
+# End of https://www.gitignore.io/api/laravel,phpunit
